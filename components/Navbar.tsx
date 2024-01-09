@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { GithubIcon, LinkedIn, TwitterIcon } from "./Icons";
 import { motion } from "framer-motion";
 
-const CustomLink = ({ href, title, className }: CustomLink) => {
+const CustomLink = ({ href, title, className }: CustomLinkProps) => {
   const { asPath } = useRouter();
   return (
     <Link href={href} className={`${className} relative group`}>
