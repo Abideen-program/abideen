@@ -3,10 +3,15 @@ import { ReactNode } from "react";
 type CustomLinkProps = {
   href: string;
   title: string;
-  className: string;
+  className?: string;
 };
 
 type LayoutProps = {
   children: ReactNode;
+  className?: string;
+};
+
+type AnimatedTextProps = {
+  text: string;
   className?: string;
 };

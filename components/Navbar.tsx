@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { GithubIcon, LinkedIn, TwitterIcon } from "./Icons";
 import { motion } from "framer-motion";
+import { CustomLinkProps } from "@/types";
 
 const CustomLink = ({ href, title, className }: CustomLinkProps) => {
   const { asPath } = useRouter();
