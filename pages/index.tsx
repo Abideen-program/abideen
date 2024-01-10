@@ -6,6 +6,7 @@ import ProfilePic from "../public/images/pic-one.png";
 import AnimatedText from "@/components/AnimatedText";
 import { motion } from "framer-motion";
 import { LinkArrow } from "@/components/Icons";
+import Hireme from "@/components/Hireme";
 
 const Home = () => {
   return (
@@ -64,7 +65,7 @@ const Home = () => {
                   className="flex items-center justify-center p-2.5 px-6 bg-dark text-light rounded-lg font-semibold border-2 border-transparent hover:bg-light hover:text-dark hover:border-dark"
                 >
                   Resume
-                  <LinkArrow className='w-5 ml-2'/>
+                  <LinkArrow className="w-5 ml-2" />
                 </Link>
 
                 <Link
@@ -78,6 +79,8 @@ const Home = () => {
             </div>
           </div>
         </Layout>
+
+        <Hireme />
       </main>
     </>
   );
