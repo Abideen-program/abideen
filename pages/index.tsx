@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Devdeen</title>
+        <title>DevDeen</title>
         <meta name="description" content="seasonal frontend developer" />
       </Head>
       <main className="flex items-center min-h-screen text-dark">
