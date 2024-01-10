@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ProfilePic from "../public/images/pic-one.png";
+import LightBulb from '../public/images/Lightbulb.svg'
 import AnimatedText from "@/components/AnimatedText";
 import { motion } from "framer-motion";
 import { LinkArrow } from "@/components/Icons";
@@ -81,6 +82,10 @@ const Home = () => {
         </Layout>
 
         <Hireme />
+
+        <div className="w-24 absolute right-8 bottom-8 border inline-block">
+          <Image src={LightBulb} alt='Light bulb' className="w-full" />
+        </div>
       </main>
     </>
   );
