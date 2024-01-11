@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ProfilePic from "../public/images/pic-one.png";
-import LightBulb from '../public/images/Lightbulb.svg'
+import LightBulb from "../public/images/Lightbulb.svg";
 import AnimatedText from "@/components/AnimatedText";
 import { motion } from "framer-motion";
 import { LinkArrow } from "@/components/Icons";
@@ -44,10 +44,10 @@ const Home = () => {
                 }}
                 className="my-3 font-medium"
               >
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                As a skilled frontend developer, I am dedicated to turning ideas
+                into innovative web applications. Explore my latest projects,
+                showcasing my expertise in React.js, Next.js and web
+                development.
               </motion.p>
 
               <motion.div
@@ -92,7 +92,7 @@ const Home = () => {
         <Hireme />
 
         <div className="w-24 absolute right-8 bottom-8 inline-block">
-          <Image src={LightBulb} alt='Light bulb' className="w-full" />
+          <Image src={LightBulb} alt="Light bulb" className="w-full" />
         </div>
       </main>
     </>
