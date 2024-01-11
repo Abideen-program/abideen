@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import DevDeen from "../public/images/devdeen.png";
+import AnimateValue from "@/components/AnimateValue";
 
 const about = () => {
   return (
@@ -15,7 +16,7 @@ const about = () => {
         />
       </Head>
 
-      <main className="border border-red-400 flex flex-col items-center justify-center">
+      <main className="flex flex-col items-center justify-center">
         <Layout className="pt-8">
           <AnimatedText
             text="what's worth doing is worth doing well!"
@@ -64,21 +65,27 @@ const about = () => {
 
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">20+</span>
+                <span className="animate-bounce inline-block text-7xl font-bold">
+                  <AnimateValue value={20} />+
+                </span>
                 <h2 className="capitalize font-medium text-xl text-dark/75">
                   satisfied clients
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">30+</span>
+                <span className="animate-bounce inline-block text-7xl font-bold">
+                  <AnimateValue value={30} />+
+                </span>
                 <h2 className="capitalize font-medium text-xl text-dark/75">
                   completed projects
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">3+</span>
+                <span className="animate-bounce inline-block text-7xl font-bold">
+                  <AnimateValue value={3} />+
+                </span>
                 <h2 className="capitalize font-medium text-xl text-dark/75">
                   years of experience
                 </h2>

@@ -15,3 +15,7 @@ type AnimatedTextProps = {
   text: string;
   className?: string;
 };
+
+type AnimateValueProps = {
+  value: number
+}
