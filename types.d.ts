@@ -17,5 +17,11 @@ type AnimatedTextProps = {
 };
 
 type AnimateValueProps = {
-  value: number
-}
+  value: number;
+};
+
+type SkillsProps = {
+  name: string;
+  x: string;
+  y: string;
+};

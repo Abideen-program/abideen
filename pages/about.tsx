@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import DevDeen from "../public/images/devdeen.png";
 import AnimateValue from "@/components/AnimateValue";
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -92,6 +93,8 @@ const about = () => {
               </div>
             </div>
           </div>
+
+          <Skills />
         </Layout>
       </main>
     </>
