@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <motion.div
-        className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full"
+        className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full animate-spin-slow"
         whileHover={{
           background: [
             "#121212",
@@ -18,7 +18,7 @@ const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        <p className="text-2xl font-bold">AB</p>
+        <p className="text-2xl font-bold">DD</p>
       </motion.div>
     </Link>
   );

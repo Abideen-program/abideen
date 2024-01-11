@@ -69,10 +69,18 @@ const Home = () => {
                   <LinkArrow className="w-5 ml-2" />
                 </Link>
 
+                {/* <Link
+                  href="mailto:olafimihana@gmail.com"
+                  target="_blank"
+                  className="flex items-center justify-center p-2.5 px-6 bg-[#BC5329] text-light rounded-lg font-semibold border-2 border-transparent hover:bg-light hover:text-[#BC5329] hover:border-[#BC5329] animate-bounce"
+                >
+                  Contact
+                </Link> */}
+
                 <Link
                   href="mailto:olafimihana@gmail.com"
                   target="_blank"
-                  className="flex items-center justify-center p-2.5 px-6 bg-[#BC5329] text-light rounded-lg font-semibold border-2 border-transparent hover:bg-light hover:text-[#BC5329] hover:border-[#BC5329]"
+                  className="underline font-semibold animate-bounce hover:text-[#BC5329]"
                 >
                   Contact
                 </Link>
@@ -83,7 +91,7 @@ const Home = () => {
 
         <Hireme />
 
-        <div className="w-24 absolute right-8 bottom-8 border inline-block">
+        <div className="w-24 absolute right-8 bottom-8 inline-block">
           <Image src={LightBulb} alt='Light bulb' className="w-full" />
         </div>
       </main>
