@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         dark: "#1b1b1b",
         light: "#f5f5f5",
-        primary: "#f056c7",
+        primary: "#B95328",
         primaryDark: "#58e6d9",
       },
       animation: {

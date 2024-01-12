@@ -1,6 +1,7 @@
 import { DetailsProps } from "@/types";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import LiIcon from "./LiIcon";
 
 const Details = ({
   position,
@@ -12,12 +13,22 @@ const Details = ({
   workTwo,
   className,
 }: DetailsProps) => {
+  const ref = useRef<any>(null);
+
   return (
-    <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
-      <div>
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+    >
+      <LiIcon reference={ref} />
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
         <h3 className="text-2xl font-bold capitalize">
           {position}&nbsp;{" "}
-          <a href={companyLink} className="text-[#B95328]">
+          <a href={companyLink} className="text-primary">
             @{company}
           </a>
         </h3>
@@ -26,7 +37,7 @@ const Details = ({
         </span>
         <p className="font-medium w-full">{work}</p>
         <p className={`font-medium w-full ${className}`}>{workTwo}</p>
-      </div>
+      </motion.div>
     </li>
   );
 };
@@ -49,7 +60,7 @@ const Experience = () => {
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="bg-dark w-1 h-full absolute top-0 left-8 origin-top"
+          className="bg-dark w-1 h-full absolute top-0 left-10 origin-top"
         />
 
         <ul className="w-full flex flex-col items-center justify-between">
