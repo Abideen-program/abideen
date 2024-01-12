@@ -10,7 +10,7 @@ const LiIcon = ({ reference }: Props) => {
     offset: ["center end", "center center"],
   });
   return (
-    <figure className="absolute left-1 border border-red-950 stroke-dark">
+    <figure className="absolute left-1 stroke-dark">
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="75"

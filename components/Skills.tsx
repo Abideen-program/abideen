@@ -19,7 +19,7 @@ const Skill = ({ name, x, y }: SkillsProps) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="mt-32 text-7xl text-center font-bold">Skills</h2>
+      <h2 className="mt-32 text-6xl text-center font-bold">Skills</h2>
       <div className="relative w-full h-screen rounded-full flex items-center justify-center bg-circularLight">
         <motion.div
           whileHover={{ scale: 1.05 }}

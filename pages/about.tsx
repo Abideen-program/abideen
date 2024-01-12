@@ -6,6 +6,7 @@ import DevDeen from "../public/images/devdeen.png";
 import AnimateValue from "@/components/AnimateValue";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const about = () => {
   return (
@@ -97,6 +98,7 @@ const about = () => {
 
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>

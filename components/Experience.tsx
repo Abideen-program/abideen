@@ -50,12 +50,12 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-32 border border-emerald-600">
-      <h2 className="font-bold text-center text-7xl w-full mb-20">
+    <div className="my-32">
+      <h2 className="font-bold text-center text-6xl w-full mb-20">
         Experience
       </h2>
 
-      <div className="w-[75%] mx-auto relative border border-red-950">
+      <div className="w-[75%] mx-auto relative">
         {/* The scroll */}
         <motion.div
           style={{ scaleY: scrollYProgress }}

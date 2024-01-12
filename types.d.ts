@@ -36,3 +36,11 @@ type DetailsProps = {
   workTwo?: string;
   className?: string;
 };
+
+type EduProps = {
+  type: string;
+  time: string;
+  place: string;
+  info: string;
+  className?: string;
+};
