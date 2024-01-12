@@ -1,4 +1,6 @@
 import { DetailsProps } from "@/types";
+import { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 
 const Details = ({
   position,
@@ -30,6 +32,12 @@ const Details = ({
 };
 
 const Experience = () => {
+  const ref = useRef<any>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center start"],
+  });
+
   return (
     <div className="my-32 border border-emerald-600">
       <h2 className="font-bold text-center text-7xl w-full mb-20">
@@ -37,6 +45,13 @@ const Experience = () => {
       </h2>
 
       <div className="w-[75%] mx-auto relative border border-red-950">
+        {/* The scroll */}
+        <motion.div
+          style={{ scaleY: scrollYProgress }}
+          ref={ref}
+          className="bg-dark w-1 h-full absolute top-0 left-8 origin-top"
+        />
+
         <ul className="w-full flex flex-col items-center justify-between">
           <Details
             position="Frontend Dev."
