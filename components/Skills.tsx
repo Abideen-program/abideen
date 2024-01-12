@@ -6,8 +6,9 @@ const Skill = ({ name, x, y }: SkillsProps) => {
     <motion.div
       whileHover={{ scale: 1.05 }}
       initial={{ y: 0, x: 0 }}
-      animate={{ x: x, y: y }}
+      whileInView={{ x: x, y: y }}
       transition={{ duration: 1.5 }}
+      viewport={{once: true}}
       className="flex items-center justify-center py-3 px-6 shadow-dark rounded-full bg-dark text-light font-semibold cursor-pointer absolute"
     >
       {name}
@@ -18,7 +19,7 @@ const Skill = ({ name, x, y }: SkillsProps) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="mt-32 text-8xl text-center font-bold">Skills</h2>
+      <h2 className="mt-32 text-7xl text-center font-bold">Skills</h2>
       <div className="relative w-full h-screen rounded-full flex items-center justify-center bg-circularLight">
         <motion.div
           whileHover={{ scale: 1.05 }}

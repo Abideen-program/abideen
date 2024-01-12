@@ -25,3 +25,14 @@ type SkillsProps = {
   x: string;
   y: string;
 };
+
+type DetailsProps = {
+  position: string;
+  company: string;
+  companyLink: string;
+  time: string;
+  address: string;
+  work: string;
+  workTwo?: string;
+  className?: string;
+};
