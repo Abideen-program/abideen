@@ -44,3 +44,12 @@ type EduProps = {
   info: string;
   className?: string;
 };
+
+type FeaturedProps = {
+  type: string;
+  title: string;
+  summary: string;
+  img: any;
+  link: string;
+  github: string;
+};
