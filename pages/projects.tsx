@@ -6,7 +6,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Jumia from "../public/images/jumia.png";
-import NFT from "../public/images/nft.webp";
+import Fresh from "../public/images/fresh.png";
 
 const FeaturedProject = ({
   type,
@@ -130,17 +130,17 @@ const projects = () => {
 
             <div className="col-span-6">
               <Project
-                github="/"
-                img={NFT}
-                link="/"
-                title="NFT collection"
-                type="website template"
+                github="https://github.com/Abideen-program/resturant"
+                img={Fresh}
+                link="https://freshalways.netlify.app/"
+                title="Fresh Always"
+                type="Resturant Template"
               />
             </div>
             <div className="col-span-6">
               <Project
                 github="/"
-                img={NFT}
+                img={Fresh}
                 link="/"
                 title="NFT collection"
                 type="website template"
@@ -154,7 +154,7 @@ const projects = () => {
             <div className="col-span-6 border">
               <Project
                 github="/"
-                img={NFT}
+                img={Fresh}
                 link="/"
                 title="NFT collection"
                 type="website template"
@@ -163,7 +163,7 @@ const projects = () => {
             <div className="col-span-6 border">
               <Project
                 github="/"
-                img={NFT}
+                img={Fresh}
                 link="/"
                 title="NFT collection"
                 type="website template"
