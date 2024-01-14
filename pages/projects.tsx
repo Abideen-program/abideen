@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Jumia from "../public/images/jumia.png";
 import Fresh from "../public/images/fresh.png";
+import Shoppy from "../public/images/shoppy.png";
 
 const FeaturedProject = ({
   type,
@@ -139,11 +140,11 @@ const projects = () => {
             </div>
             <div className="col-span-6">
               <Project
-                github="/"
-                img={Fresh}
-                link="/"
-                title="NFT collection"
-                type="website template"
+                github="https://github.com/Abideen-program/Shoppy"
+                img={Shoppy}
+                link="https://abishoppy.netlify.app/"
+                title="Shoppy"
+                type="E-commerce Template"
               />
             </div>
 
