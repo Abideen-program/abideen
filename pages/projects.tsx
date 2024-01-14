@@ -5,7 +5,7 @@ import { ProjectProps } from "@/types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Feature1 from "../public/images/prop.webp";
+import Jumia from "../public/images/jumia.png";
 import NFT from "../public/images/nft.webp";
 
 const FeaturedProject = ({
@@ -116,13 +116,13 @@ const projects = () => {
             className="!text-7xl"
           />
 
-          <div className="grid grid-cols-12 gap-10 border border-red-700 w-full mt-10">
+          <div className="grid grid-cols-12 gap-10 w-full mt-10">
             <div className="col-span-12 w-full">
               <FeaturedProject
-                github="/"
-                img={Feature1}
-                link="/"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                github="https://github.com/Abideen-program/jumia"
+                img={Jumia}
+                link="https://jummia-clone.netlify.app/"
+                summary="A feature-rich Jumia Clone web App using React, Tailwind CSS, React-Redux, ReduxJs-toolkit React Router and Formik. It shows detail regarding naviagting the web app, from onboarding, to navigating the product section, adding products to cart, and setting delivery mode."
                 title="Jumia Clone"
                 type="Featured Project"
               />
