@@ -9,6 +9,7 @@ import Jumia from "../public/images/jumia.png";
 import Fresh from "../public/images/fresh.png";
 import Shoppy from "../public/images/shoppy.png";
 import Bank from "../public/images/bank.png";
+import Disney from "../public/images/disney.png";
 
 const FeaturedProject = ({
   type,
@@ -63,7 +64,7 @@ const FeaturedProject = ({
 
 const Project = ({ type, link, title, img, github }: ProjectProps) => {
   return (
-    <article className="flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl">
+    <article className="flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl cursor-pointer">
       <Link
         href={link}
         target="_blank"
@@ -130,7 +131,7 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6">
+            <div className="col-span-6 perspective">
               <Project
                 github="https://github.com/Abideen-program/resturant"
                 img={Fresh}
@@ -164,11 +165,11 @@ const projects = () => {
             </div>
             <div className="col-span-6 border">
               <Project
-                github="/"
-                img={Fresh}
-                link="/"
-                title="NFT collection"
-                type="website template"
+                github="https://github.com/Abideen-program/disney"
+                img={Disney}
+                link="https://mydisneyclone.netlify.app/home"
+                title="Disney Clone"
+                type="Movie Website"
               />
             </div>
           </div>
