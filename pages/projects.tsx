@@ -8,6 +8,7 @@ import Link from "next/link";
 import Jumia from "../public/images/jumia.png";
 import Fresh from "../public/images/fresh.png";
 import Shoppy from "../public/images/shoppy.png";
+import Bank from "../public/images/bank.png";
 
 const FeaturedProject = ({
   type,
@@ -154,11 +155,11 @@ const projects = () => {
 
             <div className="col-span-6 border">
               <Project
-                github="/"
-                img={Fresh}
-                link="/"
-                title="NFT collection"
-                type="website template"
+                github="https://github.com/Abideen-program/BankGo"
+                img={Bank}
+                link="https://bankgo.netlify.app/"
+                title="BankGo"
+                type="Bank Account Template"
               />
             </div>
             <div className="col-span-6 border">
