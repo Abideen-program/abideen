@@ -1,11 +1,12 @@
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
-import { FeaturedProps } from "@/types";
+import { ProjectProps } from "@/types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Feature1 from "../public/images/prop.webp";
+import NFT from "../public/images/nft.webp";
 
 const FeaturedProject = ({
   type,
@@ -14,7 +15,7 @@ const FeaturedProject = ({
   img,
   link,
   github,
-}: FeaturedProps) => {
+}: ProjectProps) => {
   return (
     <article className="w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark bg-light shadow-2xl">
       <Link
@@ -22,7 +23,11 @@ const FeaturedProject = ({
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto hover:scale-[1.07] transition-all duration-300"/>
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto hover:scale-[1.07] transition-all duration-300"
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between gap-y-2 ">
@@ -47,6 +52,49 @@ const FeaturedProject = ({
             className="py-2 px-6 font-semibold text-lg text-light bg-dark rounded-lg"
           >
             Visit Project
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+const Project = ({ type, link, title, img, github }: ProjectProps) => {
+  return (
+    <article className="flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl">
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer rounded-lg overflow-hidden"
+      >
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto hover:scale-110 transition-all duration-300"
+        />
+      </Link>
+
+      <div className="flex flex-col items-start justify-between gap-1">
+        <span className="font-medium text-primary capitalize text-xl">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="w-full text-3xl font-bold">{title}</h2>
+        </Link>
+        <div className="w-full flex items-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-lg font-semibold underline"
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-7">
+            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -80,15 +128,47 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6 border border-green-600">project 1</div>
-            <div className="col-span-6 border border-green-600">project 2</div>
-
-            <div className="col-span-12 border border-green-600">
-              Feature Projects
+            <div className="col-span-6">
+              <Project
+                github="/"
+                img={NFT}
+                link="/"
+                title="NFT collection"
+                type="website template"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                github="/"
+                img={NFT}
+                link="/"
+                title="NFT collection"
+                type="website template"
+              />
             </div>
 
-            <div className="col-span-6 border border-green-600">project 3</div>
-            <div className="col-span-6 border border-green-600">project 4</div>
+            {/* <div className="col-span-12 border border-green-600">
+              Feature Projects
+            </div> */}
+
+            <div className="col-span-6 border">
+              <Project
+                github="/"
+                img={NFT}
+                link="/"
+                title="NFT collection"
+                type="website template"
+              />
+            </div>
+            <div className="col-span-6 border">
+              <Project
+                github="/"
+                img={NFT}
+                link="/"
+                title="NFT collection"
+                type="website template"
+              />
+            </div>
           </div>
         </Layout>
       </main>

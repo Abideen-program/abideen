@@ -45,10 +45,10 @@ type EduProps = {
   className?: string;
 };
 
-type FeaturedProps = {
+type ProjectProps = {
   type: string;
   title: string;
-  summary: string;
+  summary?: string;
   img: any;
   link: string;
   github: string;
