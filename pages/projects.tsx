@@ -20,7 +20,7 @@ const FeaturedProject = ({
   github,
 }: ProjectProps) => {
   return (
-    <article className="w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark bg-light shadow-2xl">
+    <article className="w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark bg-light shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
       <Link
         href={link}
         target="_blank"
@@ -62,9 +62,9 @@ const FeaturedProject = ({
   );
 };
 
-const Project = ({ type, link, title, img, github }: ProjectProps) => {
+const Project = ({ type, link, title, img, github, className }: ProjectProps) => {
   return (
-    <article className="flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl cursor-pointer">
+    <article className={`flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl cursor-pointer transform hover:${className} hover:transition-all hover:duration-500`}>
       <Link
         href={link}
         target="_blank"
@@ -120,7 +120,7 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-10 w-full mt-10">
-            <div className="col-span-12 w-full">
+            <div className="col-span-12 w-full perspective-1600">
               <FeaturedProject
                 github="https://github.com/Abideen-program/jumia"
                 img={Jumia}
@@ -131,22 +131,24 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6 perspective">
+            <div className="col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/resturant"
                 img={Fresh}
                 link="https://freshalways.netlify.app/"
                 title="Fresh Always"
                 type="Resturant Template"
+                className="-rotate-y-30"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/Shoppy"
                 img={Shoppy}
                 link="https://abishoppy.netlify.app/"
                 title="Shoppy"
                 type="E-commerce Template"
+                className="rotate-y-30"
               />
             </div>
 
@@ -154,22 +156,24 @@ const projects = () => {
               Feature Projects
             </div> */}
 
-            <div className="col-span-6 border">
+            <div className="col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/BankGo"
                 img={Bank}
                 link="https://bankgo.netlify.app/"
                 title="BankGo"
                 type="Bank Account Template"
+                className="rotate-x-30"
               />
             </div>
-            <div className="col-span-6 border">
+            <div className="col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/disney"
                 img={Disney}
                 link="https://mydisneyclone.netlify.app/home"
                 title="Disney Clone"
                 type="Movie Website"
+                className="rotate-x-30"
               />
             </div>
           </div>

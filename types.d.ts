@@ -52,4 +52,5 @@ type ProjectProps = {
   img: any;
   link: string;
   github: string;
+  className?: string;
 };
