@@ -10,6 +10,7 @@ import Fresh from "../public/images/fresh.png";
 import Shoppy from "../public/images/shoppy.png";
 import Bank from "../public/images/bank.png";
 import Disney from "../public/images/disney.png";
+import Cocktail from "../public/images/cocktail.png";
 
 const FeaturedProject = ({
   type,
@@ -62,9 +63,18 @@ const FeaturedProject = ({
   );
 };
 
-const Project = ({ type, link, title, img, github, className }: ProjectProps) => {
+const Project = ({
+  type,
+  link,
+  title,
+  img,
+  github,
+  className,
+}: ProjectProps) => {
   return (
-    <article className={`flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl cursor-pointer transform hover:${className} hover:transition-all hover:duration-500`}>
+    <article
+      className={`flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl cursor-pointer transform hover:${className} hover:transition-all hover:duration-500`}
+    >
       <Link
         href={link}
         target="_blank"
@@ -152,11 +162,18 @@ const projects = () => {
               />
             </div>
 
-            {/* <div className="col-span-12 border border-green-600">
-              Feature Projects
-            </div> */}
+            <div className="col-span-12 perspective-1600">
+              <FeaturedProject
+                github="https://github.com/Abideen-program/disney"
+                img={Disney}
+                link="https://mydisneyclone.netlify.app/home"
+                summary="A feature-rich disney Clone web App using React, Styled Components, React-Redux, ReduxJs-toolkit React Router, Firebase, React Slick and Framer motion. It shows detail regarding naviagting the web app, from onboarding, to display movies under different category sections."
+                title="Disney Clone"
+                type="Featured Project"
+              />
+            </div>
 
-            <div className="col-span-6 perspective-1200">
+            <div className="col-span-6 perspective-1600">
               <Project
                 github="https://github.com/Abideen-program/BankGo"
                 img={Bank}
@@ -168,11 +185,11 @@ const projects = () => {
             </div>
             <div className="col-span-6 perspective-1200">
               <Project
-                github="https://github.com/Abideen-program/disney"
-                img={Disney}
-                link="https://mydisneyclone.netlify.app/home"
-                title="Disney Clone"
-                type="Movie Website"
+                github="https://github.com/Abideen-program/cocktail"
+                img={Cocktail}
+                link="https://cocktaildrink.netlify.app/"
+                title="Cocktail Hour"
+                type="Template Website"
                 className="rotate-x-30"
               />
             </div>
