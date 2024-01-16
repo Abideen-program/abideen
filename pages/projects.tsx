@@ -21,7 +21,8 @@ const FeaturedProject = ({
   github,
 }: ProjectProps) => {
   return (
-    <article className="w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark bg-light shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
+    <article className="relative w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark bg-light shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
+      {/* <div className="absolute top-0 left-5 h-[103%] w-[102%] bg-dark rounded-3xl -z-10" /> */}
       <Link
         href={link}
         target="_blank"
@@ -122,7 +123,7 @@ const projects = () => {
         <title>DevDeen | Projects Page</title>
         <meta name="description" content="projects done by DevDeen" />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center border border-yellow-600">
+      <main className="w-full flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
             text="The mind surpasses the intellect!"

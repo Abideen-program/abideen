@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedIn, TwitterIcon } from "./Icons";
+import { GithubIcon, LinkedIn, MoonIcon, SunIcon, TwitterIcon } from "./Icons";
 import { motion } from "framer-motion";
 import { CustomLinkProps } from "@/types";
+import useThemeSwitcher from "./hook/useThemeSwitcher";
 
 const CustomLink = ({ href, title, className }: CustomLinkProps) => {
   const { asPath } = useRouter();
@@ -22,6 +23,8 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
 };
 
 const Navbar = () => {
+  const {mode, setMode} = useThemeSwitcher();
+
   return (
     <header className="px-32 py-8 flex items-center justify-between font-medium">
       <nav className="">
@@ -61,9 +64,19 @@ const Navbar = () => {
             <LinkedIn />
           </li>
         </motion.a>
-        <Link href="/" target="_blank">
-          <li>{/* <LightDarkIcon /> */}</li>
-        </Link>
+
+        <button
+          onClick={() => {
+            setMode(mode === "dark" ? "light" : "dark");
+          }}
+          className="border border-dark p-1 flex items-center justify-center rounded-full"
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </ul>
       <div className="absolute left-[50%] translate-x-[-50%]">
         <Logo />
