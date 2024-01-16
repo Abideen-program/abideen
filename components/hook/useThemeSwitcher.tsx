@@ -9,7 +9,6 @@ const useThemeSwitcher = () => {
 
     const handleChange = () => {
       if (userPref) {
-        console.log({ mode, userPref });
         let theme = userPref === "dark" ? "dark" : "light";
         setMode(theme);
 
@@ -19,7 +18,6 @@ const useThemeSwitcher = () => {
           document.documentElement.classList.remove("dark");
         }
       } else {
-        console.log({ mode, userPref });
         let theme = mediaQuery.matches ? "dark" : "light";
         setMode(theme);
         if (theme === "dark") {
@@ -37,9 +35,10 @@ const useThemeSwitcher = () => {
     if (mode === "dark") {
       localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     } else {
       localStorage.setItem("theme", "light");
-      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
     }
   }, [mode]);
 
