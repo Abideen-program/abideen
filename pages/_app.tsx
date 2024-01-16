@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${montserrat.className} bg-light min-h-screen`}>
+    <main className={`${montserrat.className} bg-light min-h-screen dark:bg-dark`}>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
