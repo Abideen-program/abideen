@@ -19,7 +19,7 @@ const about = () => {
         />
       </Head>
 
-      <main className="flex flex-col items-center justify-center">
+      <main className="flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-8">
           <AnimatedText
             text="what's worth doing is worth doing well!"
@@ -28,11 +28,11 @@ const about = () => {
 
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="flex flex-col items-start justify-start col-span-3">
-              <h2 className="uppercase font-bold text-xl text-dark/75 mb-4">
+              <h2 className="uppercase font-bold text-xl text-dark/75 dark:text-light/75 mb-4">
                 about me
               </h2>
 
-              <p className="font-medium text-black/90">
+              <p className="font-medium text-black/90 dark:text-light/90">
                 Hi, I'm DevDeen, a frontend developer with a passion for
                 creating beautiful, functional, and user-centered digital
                 experiences. With 3 years of experience in the field. I am
@@ -41,13 +41,13 @@ const about = () => {
                 single line of code
               </p>
 
-              <p className="my-4 font-medium text-black/90">
+              <p className="my-4 font-medium text-black/90 dark:text-light/90">
                 I believe that design is about more than just making things look
                 pretty - it's about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
 
-              <p className="my-4 font-medium text-black/90">
+              <p className="my-4 font-medium text-black/90 dark:text-light/90">
                 Whether I'm working on a website, or other digital product, I
                 bring my commitment to design excellence and user-centered
                 thinking to every project I work on. I look forward to the
@@ -56,8 +56,8 @@ const about = () => {
             </div>
 
             <div className="col-span-3 h-max z-10 relative">
-              <div className="w-[102%] h-[103%] top-0 -right-3 bg-dark rounded-2xl absolute -z-10" />
-              <div className="border-2 border-dark rounded-2xl p-6 bg-light">
+              <div className="w-[102%] h-[103%] top-0 -right-3 bg-dark dark:bg-light rounded-2xl absolute -z-10" />
+              <div className="border-2 border-dark dark:border-light rounded-2xl p-6 bg-light dark:bg-dark">
                 <Image
                   src={DevDeen}
                   alt="a picture of DevDeen"
@@ -71,7 +71,7 @@ const about = () => {
                 <span className="animate-bounce inline-block text-7xl font-bold">
                   <AnimateValue value={20} />+
                 </span>
-                <h2 className="capitalize font-medium text-xl text-dark/75">
+                <h2 className="capitalize font-medium text-xl text-dark/75 dark:text-light/75">
                   satisfied clients
                 </h2>
               </div>
@@ -80,7 +80,7 @@ const about = () => {
                 <span className="animate-bounce inline-block text-7xl font-bold">
                   <AnimateValue value={30} />+
                 </span>
-                <h2 className="capitalize font-medium text-xl text-dark/75">
+                <h2 className="capitalize font-medium text-xl text-dark/75 dark:text-light/75">
                   completed projects
                 </h2>
               </div>
@@ -89,7 +89,7 @@ const about = () => {
                 <span className="animate-bounce inline-block text-7xl font-bold">
                   <AnimateValue value={3} />+
                 </span>
-                <h2 className="capitalize font-medium text-xl text-dark/75">
+                <h2 className="capitalize font-medium text-xl text-dark/75 dark:text-light/75">
                   years of experience
                 </h2>
               </div>
