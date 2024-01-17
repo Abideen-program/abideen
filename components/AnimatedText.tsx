@@ -36,7 +36,7 @@ const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
         variants={quote}
         initial="initial"
         animate="animate"
-        className={`inline-block w-full text-dark font-semibold capitalize text-8xl ${className}`}
+        className={`inline-block w-full text-dark dark:text-light font-semibold capitalize text-8xl ${className}`}
       >
         {text.split(" ").map((word, idx) => {
           return (

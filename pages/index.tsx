@@ -16,7 +16,7 @@ const Home = () => {
         <title>DevDeen</title>
         <meta name="description" content="seasonal frontend developer" />
       </Head>
-      <main className="flex items-center min-h-screen text-dark">
+      <main className="flex items-center min-h-screen text-dark dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-[50%]">
@@ -63,7 +63,7 @@ const Home = () => {
                   href="/abideen.pdf"
                   download={true}
                   target="_blank"
-                  className="flex items-center justify-center p-2.5 px-6 bg-dark text-light rounded-lg font-semibold border-2 border-transparent hover:bg-light hover:text-dark hover:border-dark"
+                  className="flex items-center justify-center p-2.5 px-6 bg-dark dark:bg-light text-light dark:text-dark rounded-lg font-semibold border-2 border-transparent hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light hover:border-dark dark:hover:border-light"
                 >
                   Resume
                   <LinkArrow className="w-5 ml-2" />
