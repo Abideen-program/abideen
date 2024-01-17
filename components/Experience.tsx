@@ -28,11 +28,11 @@ const Details = ({
       >
         <h3 className="text-2xl font-bold capitalize">
           {position}&nbsp;{" "}
-          <a href={companyLink} className="text-primary">
+          <a href={companyLink} className="text-primary dark:text-primaryDark">
             @{company}
           </a>
         </h3>
-        <span className="font-medium text-dark/75">
+        <span className="font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -60,7 +60,7 @@ const Experience = () => {
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="bg-dark w-1 h-full absolute top-0 left-10 origin-top"
+          className="bg-dark dark:bg-light w-1 h-full absolute top-0 left-10 origin-top"
         />
 
         <ul className="w-full flex flex-col items-center justify-between">
