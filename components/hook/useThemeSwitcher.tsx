@@ -30,8 +30,6 @@ const useThemeSwitcher = () => {
       }
     };
 
-    handleChange();
-
     mediaQuery.addEventListener("change", handleChange);
 
     return () => mediaQuery.removeEventListener("change", handleChange);
@@ -42,17 +40,11 @@ const useThemeSwitcher = () => {
       localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
       document.documentElement.classList.remove("light");
-    } else {
+    } if(mode === 'light') {
       localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }
   }, [mode]);
-
-  // useEffect(() => {
-  //   const userPref = localStorage.getItem("theme")!;
-  //   console.log(userPref)
-  //   setMode(userPref);
-  // }, [mode]);
 
   return { mode, setMode };
 };

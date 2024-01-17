@@ -21,7 +21,7 @@ const FeaturedProject = ({
   github,
 }: ProjectProps) => {
   return (
-    <article className="relative w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark bg-light shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
+    <article className="relative w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
       {/* <div className="absolute top-0 left-5 h-[103%] w-[102%] bg-dark rounded-3xl -z-10" /> */}
       <Link
         href={link}
@@ -36,25 +36,27 @@ const FeaturedProject = ({
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between gap-y-2 ">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2"
+          className="hover:underline underline-offset-2 dark:text-light"
         >
           <h2 className="text-4xl w-full text-left font-bold">{title}</h2>
         </Link>
-        <p className="text-dark font-medium">{summary}</p>
+        <p className="text-dark dark:text-light font-medium">{summary}</p>
 
         <div className="flex items-center justify-between gap-x-4">
           <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
+            <GithubIcon className="dark:fill-light" />
           </Link>
 
           <Link
             href={link}
             target="_blank"
-            className="py-2 px-6 font-semibold text-lg text-light bg-dark rounded-lg"
+            className="py-2 px-6 font-semibold text-lg text-light dark:text-dark bg-dark dark:bg-light rounded-lg"
           >
             Visit Project
           </Link>
@@ -74,7 +76,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <article
-      className={`flex flex-col item-start justify-between gap-4 p-5 border border-dark rounded-2xl bg-light shadow-2xl cursor-pointer transform hover:${className} hover:transition-all hover:duration-500`}
+      className={`flex flex-col item-start justify-between gap-4 p-5 border border-dark dark:border-light rounded-2xl bg-light dark:bg-dark shadow-2xl cursor-pointer transform hover:${className} hover:transition-all hover:duration-500`}
     >
       <Link
         href={link}
@@ -89,7 +91,7 @@ const Project = ({
       </Link>
 
       <div className="flex flex-col items-start justify-between gap-1">
-        <span className="font-medium text-primary capitalize text-xl">
+        <span className="font-medium text-primary dark:text-primaryDark capitalize text-xl">
           {type}
         </span>
         <Link
@@ -123,7 +125,7 @@ const projects = () => {
         <title>DevDeen | Projects Page</title>
         <meta name="description" content="projects done by DevDeen" />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center">
+      <main className="w-full flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="The mind surpasses the intellect!"
