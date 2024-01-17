@@ -65,7 +65,9 @@ const Navbar = () => {
           </li>
         </motion.a>
 
-        <button
+        <motion.button
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
           onClick={() => {
             setMode(mode === "dark" ? "light" : "dark");
           }}
@@ -78,7 +80,7 @@ const Navbar = () => {
           ) : (
             <MoonIcon className={"fill-dark"} />
           )}
-        </button>
+        </motion.button>
       </ul>
       <div className="absolute left-[50%] translate-x-[-50%]">
         <Logo />
