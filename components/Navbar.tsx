@@ -12,7 +12,7 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1.5px] bg-dark inline-block w-0 absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] duration-300 ease-linear ${
+        className={`h-[1.5px] bg-dark dark:bg-light inline-block w-0 absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] duration-300 ease-linear ${
           asPath === href ? "w-full" : "w-0"
         }`}
       >
@@ -23,10 +23,10 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
 };
 
 const Navbar = () => {
-  const {mode, setMode} = useThemeSwitcher();
+  const { mode, setMode } = useThemeSwitcher();
 
   return (
-    <header className="px-32 py-8 flex items-center justify-between font-medium">
+    <header className="px-32 py-8 flex items-center justify-between font-medium dark:text-light">
       <nav className="">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -69,7 +69,9 @@ const Navbar = () => {
           onClick={() => {
             setMode(mode === "dark" ? "light" : "dark");
           }}
-          className="border border-dark p-1 flex items-center justify-center rounded-full"
+          className={`border border-dark p-1 flex items-center justify-center rounded-full ${
+            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+          }`}
         >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark"} />
