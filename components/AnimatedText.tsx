@@ -43,7 +43,7 @@ const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
             <motion.span
               variants={singleWord}
               key={word + "-" + idx}
-              className="inline-block leading-[60px] 3xl:leading-[100px]"
+              className="inline-block md:leading-[50px] 3xl:leading-[100px]"
             >
               {word}&nbsp;
             </motion.span>

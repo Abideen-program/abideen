@@ -57,7 +57,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="relative px-8 lg:px-32 py-8 flex items-center justify-between font-medium dark:text-light">
+    <header className="relative px-8 py-8 lg:px-32  flex items-center justify-between font-medium dark:text-light">
       <button
         className="flex lg:hidden flex-col items-center justify-center gap-1"
         onClick={handleClick}
@@ -220,7 +220,7 @@ const Navbar = () => {
         </motion.div>
       )}
 
-      <div className="absolute left-[50%] translate-x-[-50%] top-4">
+      <div className="absolute left-[50%] translate-x-[-50%] md:top-6">
         <Logo />
       </div>
     </header>

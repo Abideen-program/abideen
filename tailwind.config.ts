@@ -28,7 +28,7 @@ const config: Config = {
     },
     screens: {
       sm: "426px",
-      // => @media (min-width: 480px) { ... }
+      // => @media (min-width: 426px) { ... }
 
       md: "768px",
       // => @media (min-width: 768px) { ... }
@@ -37,7 +37,7 @@ const config: Config = {
       // => @media (min-width: 976px) { ... }
 
       xl: "1280px",
-      // => @media (min-width: 1440px) { ... }
+      // => @media (min-width: 1280px) { ... }
 
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }

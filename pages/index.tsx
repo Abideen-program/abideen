@@ -17,23 +17,23 @@ const Home = () => {
         <meta name="description" content="seasonal frontend developer" />
       </Head>
       <main className="flex items-center min-h-screen text-dark dark:text-light">
-        <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
-            <div className="w-[50%]">
+        <Layout className="md:pt-0">
+          <div className="flex items-center justify-between w-full flex-col lg:flex-row">
+            <div className="md:w-[50%] w-full">
               <Image
                 width={0}
                 height={0}
                 src={ProfilePic}
                 alt="DevDeen"
-                className="w-full h-auto"
+                className="w-full h-auto md:hidden lg:inline-block"
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
 
-            <div className="w-[50%] flex flex-col items-center self-center 3xl:gap-4">
+            <div className="flex flex-col items-center self-center 3xl:gap-4 lg:w-1/2 w-full z-10">
               <AnimatedText
-                className="!text-5xl !text-left 3xl:!text-7xl"
+                className="!text-2xl 3xl:!text-7xl md:!text-4xl !text-center lg:!text-left md:!w-full"
                 text="Turning Vision Into Reality With Code And Design."
               />
               <motion.p
@@ -43,7 +43,7 @@ const Home = () => {
                   opacity: 1,
                   transition: { delay: 3, duration: 0.5 },
                 }}
-                className="my-3 font-medium 3xl:text-3xl 3xl:leading-[50px]"
+                className="my-3 font-medium text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px] lg:text-left text-center"
               >
                 As a skilled frontend developer, I am dedicated to turning ideas
                 into innovative web applications. Explore my latest projects,
@@ -58,7 +58,7 @@ const Home = () => {
                   opacity: 1,
                   transition: { delay: 3, duration: 0.5 },
                 }}
-                className="flex items-center justify-center gap-4 3xl:text-5xl self-start mt-2"
+                className="flex items-center justify-center gap-4 3xl:text-5xl lg:self-start mt-2"
               >
                 <Link
                   href="/abideen.pdf"
@@ -92,7 +92,7 @@ const Home = () => {
 
         <Hireme />
 
-        <div className="w-24 absolute right-8 bottom-8 inline-block">
+        <div className="w-24 absolute right-8 bottom-8 hidden md:inline-block">
           <Image src={LightBulb} alt="Light bulb" className="w-full" />
         </div>
       </main>
