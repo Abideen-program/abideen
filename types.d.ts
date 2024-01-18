@@ -4,6 +4,7 @@ type CustomLinkProps = {
   href: string;
   title: string;
   className?: string;
+  onClick?: any;
 };
 
 type LayoutProps = {
