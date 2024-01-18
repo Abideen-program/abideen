@@ -31,7 +31,7 @@ const singleWord = {
 
 const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
   return (
-    <div className="w-full py-2 flex items-center justify-center text-center overflow-hidden">
+    <div className="w-full  md:py-2 flex items-center justify-center text-center overflow-hidden">
       <motion.h1
         variants={quote}
         initial="initial"
@@ -43,7 +43,7 @@ const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
             <motion.span
               variants={singleWord}
               key={word + "-" + idx}
-              className="inline-block leading-[60px]"
+              className="inline-block leading-[60px] 3xl:leading-[100px]"
             >
               {word}&nbsp;
             </motion.span>

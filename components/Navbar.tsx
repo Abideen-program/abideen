@@ -57,7 +57,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="relative px-32 py-8 flex items-center justify-between font-medium dark:text-light">
+    <header className="relative px-8 lg:px-32 py-8 flex items-center justify-between font-medium dark:text-light">
       <button
         className="flex lg:hidden flex-col items-center justify-center gap-1"
         onClick={handleClick}
@@ -84,19 +84,19 @@ const Navbar = () => {
       {/* DESKTOP SCREEN MENUBAR */}
       <div className="w-full lg:flex items-center justify-between hidden">
         <nav className="">
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mx-4" />
-          <CustomLink href="/projects" title="Projects" className="ml-4" />
+          <CustomLink href="/" title="Home" className="mr-4 3xl:text-4xl" />
+          <CustomLink href="/about" title="About" className="mx-4 3xl:text-4xl" />
+          <CustomLink href="/projects" title="Projects" className="ml-4 3xl:text-4xl" />
         </nav>
 
-        <ul className="flex items-center justify-center gap-5">
+        <ul className="flex items-center justify-center gap-5 3xl:gap-20">
           <motion.a
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             href="https://twitter.com/Olafimihanabid"
             target="_blank"
           >
-            <li className="w-6">
+            <li className="w-6 3xl:w-11">
               <TwitterIcon />
             </li>
           </motion.a>
@@ -106,7 +106,7 @@ const Navbar = () => {
             href="https://github.com/Abideen-program"
             target="_blank"
           >
-            <li className="w-6">
+            <li className="w-6 3xl:w-11">
               <GithubIcon />
             </li>
           </motion.a>
@@ -116,7 +116,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/olafimihan-abideen/"
             target="_blank"
           >
-            <li className="w-6">
+            <li className="w-6 3xl:w-11">
               <LinkedIn />
             </li>
           </motion.a>
@@ -132,9 +132,9 @@ const Navbar = () => {
             }`}
           >
             {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
+              <SunIcon className={"fill-dark 3xl:w-11"} />
             ) : (
-              <MoonIcon className={"fill-dark"} />
+              <MoonIcon className={"fill-dark 3xl:w-11"} />
             )}
           </motion.button>
         </ul>

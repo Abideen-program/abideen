@@ -31,9 +31,9 @@ const Home = () => {
               />
             </div>
 
-            <div className="w-[50%] flex flex-col items-center self-center">
+            <div className="w-[50%] flex flex-col items-center self-center 3xl:gap-4">
               <AnimatedText
-                className="!text-5xl !text-left"
+                className="!text-5xl !text-left 3xl:!text-7xl"
                 text="Turning Vision Into Reality With Code And Design."
               />
               <motion.p
@@ -43,7 +43,7 @@ const Home = () => {
                   opacity: 1,
                   transition: { delay: 3, duration: 0.5 },
                 }}
-                className="my-3 font-medium"
+                className="my-3 font-medium 3xl:text-3xl 3xl:leading-[50px]"
               >
                 As a skilled frontend developer, I am dedicated to turning ideas
                 into innovative web applications. Explore my latest projects,
@@ -58,16 +58,16 @@ const Home = () => {
                   opacity: 1,
                   transition: { delay: 3, duration: 0.5 },
                 }}
-                className="flex items-center justify-center gap-4 self-start mt-2"
+                className="flex items-center justify-center gap-4 3xl:text-5xl self-start mt-2"
               >
                 <Link
                   href="/abideen.pdf"
                   download={true}
                   target="_blank"
-                  className="flex items-center justify-center p-2.5 px-6 bg-dark dark:bg-light text-light dark:text-dark rounded-lg font-semibold border-2 border-transparent hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light hover:border-dark dark:hover:border-light"
+                  className="flex items-center justify-center p-2.5 px-6 bg-dark dark:bg-light text-light dark:text-dark rounded-lg font-semibold border-2 border-transparent hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light hover:border-dark dark:hover:border-light 3xl:p-8 3xl:text-5xl"
                 >
                   Resume
-                  <LinkArrow className="w-5 ml-2" />
+                  <LinkArrow className="w-5 ml-2 3xl:w-12" />
                 </Link>
 
                 {/* <Link
@@ -81,7 +81,7 @@ const Home = () => {
                 <Link
                   href="mailto:olafimihana@gmail.com"
                   target="_blank"
-                  className="underline font-semibold animate-bounce hover:text-[#BC5329]"
+                  className="underline font-semibold animate-bounce hover:text-[#BC5329] 3xl:text-5xl"
                 >
                   Contact
                 </Link>
