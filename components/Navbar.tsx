@@ -142,7 +142,11 @@ const Navbar = () => {
 
       {/* MOBILE SCREEN MENUBAR */}
       {isOpen && (
-        <div className="min-w-[70vw] flex flex-col items-center justify-between border fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:hidden bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 gap-5 z-30">
+        <motion.div
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1, transition: { duration: 0.4 } }}
+          className="min-w-[70vw] flex flex-col items-center justify-between border fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:hidden bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 gap-5 z-30"
+        >
           <nav className="flex flex-col items-center justify-between gap-5">
             <CustomMobileLink
               href="/"
@@ -213,7 +217,7 @@ const Navbar = () => {
               )}
             </motion.button>
           </ul>
-        </div>
+        </motion.div>
       )}
 
       <div className="absolute left-[50%] translate-x-[-50%] top-4">
