@@ -27,6 +27,12 @@ const Navbar = () => {
 
   return (
     <header className="px-32 py-8 flex items-center justify-between font-medium dark:text-light">
+      <button className="flex flex-col items-center justify-center gap-1">
+        <span className="bg-dark dark:bg-light h-0.5 w-6 rounded-sm"></span>
+        <span className="bg-dark dark:bg-light h-0.5 w-6 rounded-sm"></span>
+        <span className="bg-dark dark:bg-light h-0.5 w-6 rounded-sm"></span>
+      </button>
+
       <nav className="">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
