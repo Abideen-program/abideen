@@ -22,9 +22,25 @@ const config: Config = {
       backgroundImage: {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px);",
-          circularDark:
+        circularDark:
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 8px, #1b1b1b 100px);",
       },
+    },
+    screens: {
+      sm: "426px",
+      // => @media (min-width: 480px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "976px",
+      // => @media (min-width: 976px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1440px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
     },
   },
   plugins: [require("@xpd/tailwind-3dtransforms")],
