@@ -32,6 +32,7 @@ const FeaturedProject = ({
           src={img}
           alt={title}
           className="w-full h-auto hover:scale-[1.07] transition-all duration-300"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
 
@@ -87,6 +88,7 @@ const Project = ({
           src={img}
           alt={title}
           className="w-full h-auto hover:scale-110 transition-all duration-300"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
 

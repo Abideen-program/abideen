@@ -62,6 +62,8 @@ const about = () => {
                   src={DevDeen}
                   alt="a picture of DevDeen"
                   className="w-full h-auto rounded-2xl relative"
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>
