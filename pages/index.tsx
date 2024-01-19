@@ -31,7 +31,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="flex flex-col items-center self-center 3xl:gap-4 lg:w-1/2 w-full z-10">
+            <div className="flex flex-col items-center self-center gap-2 3xl:gap-4 lg:w-1/2 w-full z-10">
               <AnimatedText
                 className="!text-2xl 3xl:!text-7xl md:!text-4xl !text-center lg:!text-left md:!w-full"
                 text="Turning Vision Into Reality With Code And Design."
@@ -64,7 +64,7 @@ const Home = () => {
                   href="/abideen.pdf"
                   download={true}
                   target="_blank"
-                  className="flex items-center justify-center p-2.5 px-6 bg-dark dark:bg-light text-light dark:text-dark rounded-lg font-semibold border-2 border-transparent hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light hover:border-dark dark:hover:border-light 3xl:p-8 3xl:text-5xl"
+                  className="flex text-sm md:text-base items-center justify-center p-2 px-4 md:p-2.5 md:px-6 bg-dark dark:bg-light text-light dark:text-dark rounded-lg font-semibold border-2 border-transparent hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light hover:border-dark dark:hover:border-light 3xl:p-8 3xl:text-5xl"
                 >
                   Resume
                   <LinkArrow className="w-5 ml-2 3xl:w-12" />
@@ -81,7 +81,7 @@ const Home = () => {
                 <Link
                   href="mailto:olafimihana@gmail.com"
                   target="_blank"
-                  className="underline font-semibold animate-bounce hover:text-[#BC5329] 3xl:text-5xl"
+                  className="underline font-semibold animate-bounce hover:text-[#BC5329] text-sm md:text-base 3xl:text-5xl"
                 >
                   Contact
                 </Link>
