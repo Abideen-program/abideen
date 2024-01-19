@@ -26,22 +26,22 @@ const Details = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="text-2xl font-bold capitalize">
+        <h3 className="text-2xl 3xl:text-3xl font-bold capitalize">
           {position}&nbsp;{" "}
           <a href={companyLink} className="text-primary dark:text-primaryDark">
             @{company}
           </a>
         </h3>
-        <span className="font-medium text-dark/75 dark:text-light/75">
+        <span className="font-medium text-sm md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
-        <p className={`font-medium w-full ${className}`}>{workTwo}</p>
+        <p className="font-medium text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px] w-full">{work}</p>
+        <p className={`font-medium w-full text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px] ${className}`}>{workTwo}</p>
       </motion.div>
     </li>
   );
 };
-
+//font-medium text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px]
 const Experience = () => {
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
@@ -50,12 +50,12 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-32">
+    <div className="my-16">
       <h2 className="font-bold text-center text-6xl w-full mb-20">
         Experience
       </h2>
 
-      <div className="w-[75%] mx-auto relative">
+      <div className="lg:w-[75%] mx-auto relative">
         {/* The scroll */}
         <motion.div
           style={{ scaleY: scrollYProgress }}
