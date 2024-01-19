@@ -17,11 +17,13 @@ const Details = ({ type, time, place, info, className }: EduProps) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="text-2xl font-bold capitalize">{type}</h3>
-        <span className="font-medium text-dark/75 dark:text-light/75">
+        <h3 className="text-2xl 3xl:text-3xl font-bold capitalize">{type}</h3>
+        <span className="font-medium text-sm md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
           {time} | {place}
         </span>
-        <p className="font-medium w-full">{info}</p>
+        <p className="font-medium w-full text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px]">
+          {info}
+        </p>
       </motion.div>
     </li>
   );
@@ -38,7 +40,7 @@ const Education = () => {
     <div className="my-32 ">
       <h2 className="font-bold text-center text-6xl w-full mb-20">Education</h2>
 
-      <div className="w-[75%] mx-auto relative">
+      <div className="lg:w-[75%] mx-auto relative">
         {/* The scroll */}
         <motion.div
           style={{ scaleY: scrollYProgress }}

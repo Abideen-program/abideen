@@ -8,7 +8,7 @@ const Skill = ({ name, x, y }: SkillsProps) => {
       initial={{ y: 0, x: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
       viewport={{ once: true }}
-      className="flex items-center justify-center py-3 px-6 shadow-dark rounded-full bdark:shadow-light bg-dark dark:bg-light text-light dark:text-dark font-semibold cursor-pointer absolute"
+      className="flex items-center justify-center py-3 px-6 shadow-dark rounded-full bdark:shadow-light bg-dark dark:bg-light text-light dark:text-dark font-semibold cursor-pointer absolute text-base 3xl:text-3xl"
     >
       {name}
     </motion.div>
@@ -19,10 +19,10 @@ const Skills = () => {
   return (
     <>
       <h2 className="mt-32 text-6xl text-center font-bold">Skills</h2>
-      <div className="relative w-full h-screen rounded-full flex items-center justify-center bg-circularLight dark:bg-circularDark">
+      <div className="relative w-full h-screen 3xl:h-[70vh] rounded-full flex items-center justify-center bg-circularLight dark:bg-circularDark">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="flex items-center justify-center p-8 rounded-full shadow-dark dark:shadow-light bg-dark dark:bg-light text-light dark:text-dark font-semibold cursor-pointer"
+          className="flex items-center justify-center p-8 rounded-full shadow-dark dark:shadow-light bg-dark dark:bg-light text-light dark:text-dark font-semibold cursor-pointer text-base 3xl:text-3xl"
         >
           Web
         </motion.div>
