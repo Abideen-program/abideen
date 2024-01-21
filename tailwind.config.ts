@@ -39,7 +39,7 @@ const config: Config = {
       xl: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      "2xl": "1536px",
+      "2xl": "1440px",
       // => @media (min-width: 1536px) { ... }
       "3xl": "2560px",
     },

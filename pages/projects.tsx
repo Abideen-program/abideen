@@ -21,12 +21,12 @@ const FeaturedProject = ({
   github,
 }: ProjectProps) => {
   return (
-    <article className="relative w-full flex items-center justify-between p-12 gap-6 rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
+    <article className="relative w-full flex flex-col xl:flex-row items-center justify-between p-8 xl:p-12 gap-6 rounded-2xl xl:rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
       {/* <div className="absolute top-0 left-5 h-[103%] w-[102%] bg-dark rounded-3xl -z-10" /> */}
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-full xl:w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
         <Image
           src={img}
@@ -36,8 +36,8 @@ const FeaturedProject = ({
         />
       </Link>
 
-      <div className="w-1/2 flex flex-col items-start justify-between gap-y-2 ">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+      <div className="w-full xl:w-1/2 flex flex-col items-start justify-between gap-y-2 3xl:gap-3">
+        <span className="text-primary dark:text-primaryDark font-medium md:text-xl 3xl:text-5xl">
           {type}
         </span>
         <Link
@@ -45,19 +45,23 @@ const FeaturedProject = ({
           target="_blank"
           className="hover:underline underline-offset-2 dark:text-light"
         >
-          <h2 className="text-4xl w-full text-left font-bold">{title}</h2>
+          <h2 className="md:text-xl xl:text-4xl 3xl:text-5xl w-full text-left font-bold">
+            {title}
+          </h2>
         </Link>
-        <p className="text-dark dark:text-light font-medium">{summary}</p>
+        <p className="text-dark dark:text-light text-xs md:text-base 3xl:text-3xl 3xl:leading-[50px] font-medium 3xl:font-normal">
+          {summary}
+        </p>
 
         <div className="flex items-center justify-between gap-x-4">
-          <Link href={github} target="_blank" className="w-10">
+          <Link href={github} target="_blank" className="w-7 md:w-10 3xl:w-20">
             <GithubIcon className="dark:fill-light" />
           </Link>
 
           <Link
             href={link}
             target="_blank"
-            className="py-2 px-6 font-semibold text-lg text-light dark:text-dark bg-dark dark:bg-light rounded-lg"
+            className="py-2 px-4 md:px-6 3xl:py-6 3xl:px-12 font-semibold text-sm md:text-lg 3xl:text-3xl text-light dark:text-dark bg-dark dark:bg-light rounded-lg"
           >
             Visit Project
           </Link>
@@ -92,8 +96,8 @@ const Project = ({
         />
       </Link>
 
-      <div className="flex flex-col items-start justify-between gap-1">
-        <span className="font-medium text-primary dark:text-primaryDark capitalize text-xl">
+      <div className="flex flex-col items-start justify-between gap-1 3xl:gap-2">
+        <span className="font-medium text-primary dark:text-primaryDark capitalize md:text-xl 3xl:text-4xl">
           {type}
         </span>
         <Link
@@ -101,13 +105,15 @@ const Project = ({
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="w-full text-3xl font-bold">{title}</h2>
+          <h2 className="w-full text-base md:text-xl xl:text-3xl 3xl:text-4xl font-bold 3xl:font-normal">
+            {title}
+          </h2>
         </Link>
         <div className="w-full flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline"
+            className="md:text-lg 3xl:text-3xl font-semibold underline"
           >
             Visit
           </Link>
@@ -128,13 +134,13 @@ const projects = () => {
         <meta name="description" content="projects done by DevDeen" />
       </Head>
       <main className="w-full flex flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-8">
           <AnimatedText
             text="The mind surpasses the intellect!"
-            className="!text-7xl"
+            className="!text-2xl 3xl:!text-7xl md:!text-4xl !text-center md:!w-full"
           />
 
-          <div className="grid grid-cols-12 gap-10 w-full mt-10">
+          <div className="grid grid-cols-12 gap-x-0 gap-y-5 md:gap-x-10 md:gap-y-10 w-full mt-10">
             <div className="col-span-12 w-full perspective-1600">
               <FeaturedProject
                 github="https://github.com/Abideen-program/jumia"
@@ -146,7 +152,7 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6 perspective-1200">
+            <div className="col-span-12 md:col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/resturant"
                 img={Fresh}
@@ -156,7 +162,7 @@ const projects = () => {
                 className="-rotate-y-30"
               />
             </div>
-            <div className="col-span-6 perspective-1200">
+            <div className="col-span-12 md:col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/Shoppy"
                 img={Shoppy}
@@ -178,7 +184,7 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6 perspective-1600">
+            <div className="col-span-12 md:col-span-6 perspective-1600">
               <Project
                 github="https://github.com/Abideen-program/BankGo"
                 img={Bank}
@@ -188,7 +194,7 @@ const projects = () => {
                 className="rotate-x-30"
               />
             </div>
-            <div className="col-span-6 perspective-1200">
+            <div className="col-span-12 md:col-span-6 perspective-1200">
               <Project
                 github="https://github.com/Abideen-program/cocktail"
                 img={Cocktail}
