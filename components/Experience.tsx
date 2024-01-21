@@ -50,8 +50,8 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-16">
-      <h2 className="font-bold text-center text-6xl w-full mb-20">
+    <div className="md:my-16">
+      <h2 className="mt-4 md:mt-16 text-3xl lg:text-6xl text-center font-bold w-full mb-8 md:mb-20">
         Experience
       </h2>
 
