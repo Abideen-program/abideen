@@ -36,8 +36,14 @@ const Details = ({
         <span className="font-medium text-[12px] md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-medium text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] w-full">{work}</p>
-        <p className={`font-medium w-full text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] ${className}`}>{workTwo}</p>
+        <p className="font-medium text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] w-full">
+          {work}
+        </p>
+        <p
+          className={`font-medium w-full text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] ${className}`}
+        >
+          {workTwo}
+        </p>
       </motion.div>
     </li>
   );

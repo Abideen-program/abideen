@@ -1,4 +1,4 @@
-import { DetailsProps, EduProps } from "@/types";
+import { EduProps } from "@/types";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
@@ -9,19 +9,22 @@ const Details = ({ type, time, place, info, className }: EduProps) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-4 md:my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
+        className="flex flex-col justify-between gap-2"
       >
-        <h3 className="text-2xl 3xl:text-3xl font-bold capitalize">{type}</h3>
-        <span className="font-medium text-sm md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
+        <h3 className="text-sm md:text-2xl 3xl:text-3xl font-bold capitalize">
+          {type}
+        </h3>
+        <span className="font-medium text-[12px] md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
           {time} | {place}
         </span>
-        <p className="font-medium w-full text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px]">
+        <p className="font-medium text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] w-full">
           {info}
         </p>
       </motion.div>
@@ -37,7 +40,7 @@ const Education = () => {
   });
 
   return (
-    <div className="my-32 ">
+    <div className="my-8 md:my-16">
       <h2 className="mt-4 md:mt-16 text-3xl lg:text-6xl text-center font-bold w-full mb-8 md:mb-20">
         Education
       </h2>
@@ -47,7 +50,7 @@ const Education = () => {
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="bg-dark dark:bg-light w-1 h-full absolute top-0 left-10 origin-top"
+          className="bg-dark dark:bg-light w-[2px] md:w-1 h-full absolute top-0 md:left-10 origin-top"
         />
 
         <ul className="w-full flex flex-col items-center justify-between">
