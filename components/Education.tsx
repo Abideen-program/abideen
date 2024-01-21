@@ -38,7 +38,9 @@ const Education = () => {
 
   return (
     <div className="my-32 ">
-      <h2 className="font-bold text-center text-6xl w-full mb-20">Education</h2>
+      <h2 className="mt-4 md:mt-16 text-3xl lg:text-6xl text-center font-bold w-full mb-8 md:mb-20">
+        Education
+      </h2>
 
       <div className="lg:w-[75%] mx-auto relative">
         {/* The scroll */}

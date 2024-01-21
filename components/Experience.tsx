@@ -18,25 +18,26 @@ const Details = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-4 md:my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col items-center justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
+        className="flex flex-col justify-between gap-2"
       >
-        <h3 className="text-2xl 3xl:text-3xl font-bold capitalize">
+        <h3 className="text-sm md:text-2xl 3xl:text-3xl font-bold capitalize">
           {position}&nbsp;{" "}
           <a href={companyLink} className="text-primary dark:text-primaryDark">
             @{company}
           </a>
         </h3>
-        <span className="font-medium text-sm md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
+        <span className="font-medium text-[12px] md:text-base 3xl:text-3xl text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-medium text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px] w-full">{work}</p>
-        <p className={`font-medium w-full text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px] ${className}`}>{workTwo}</p>
+        <p className="font-medium text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] w-full">{work}</p>
+        <p className={`font-medium w-full text-[12px] md:text-base 3xl:text-3xl 3xl:leading-[50px] ${className}`}>{workTwo}</p>
       </motion.div>
     </li>
   );
@@ -55,12 +56,12 @@ const Experience = () => {
         Experience
       </h2>
 
-      <div className="lg:w-[75%] mx-auto relative">
+      <div className="w-full lg:w-[75%] mx-auto relative">
         {/* The scroll */}
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="bg-dark dark:bg-light w-1 h-full absolute top-0 left-10 origin-top"
+          className="bg-dark dark:bg-light w-[2px] md:w-1 h-full absolute top-0 md:left-10 origin-top"
         />
 
         <ul className="w-full flex flex-col items-center justify-between">
@@ -85,7 +86,7 @@ const Experience = () => {
           />
 
           <Details
-            position="Frontend Dev. Intern"
+            position="Intern"
             company="100Devs"
             companyLink="/"
             address="Los Angeles, USA"
