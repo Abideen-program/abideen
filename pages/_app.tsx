@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Navbar />
       <Component {...pageProps} />
-      <div className="absolute right-8 md:left-8 bottom-[180px] lg:left-auto lg:right-8 lg:bottom-28 3xl:bottom-[180px]">
+      <div className="absolute right-8 md:left-8 bottom-[180px] lg:left-auto lg:right-8 lg:bottom-28 3xl:bottom-[180px] 3xl:right-[130px]">
         <ScrollToTop />
       </div>
       <Footer />

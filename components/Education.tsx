@@ -40,7 +40,7 @@ const Education = () => {
   });
 
   return (
-    <div className="3xl:my-40">
+    <div className="3xl:my-40 mb-5 lg:mb-20">
       <h2 className="my-8 lg:my-20 mt-4 md:mt-16 text-3xl lg:text-6xl text-center font-bold w-full mb-8 md:mb-20">
         Education
       </h2>

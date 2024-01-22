@@ -133,7 +133,7 @@ const projects = () => {
         <title>DevDeen | Projects Page</title>
         <meta name="description" content="projects done by DevDeen" />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center dark:text-light">
+      <main className="w-full flex flex-col items-center justify-center dark:text-light mb-10 lg:mb-20 3xl:mb-40">
         <Layout className="pt-8">
           <AnimatedText
             text="The mind surpasses the intellect!"
