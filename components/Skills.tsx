@@ -17,11 +17,11 @@ const Skill = ({ name, x, y }: SkillsProps) => {
 
 const Skills = () => {
   return (
-    <>
-      <h2 className="mt-8 md:mt-16 text-3xl lg:text-6xl text-center font-bold">
+    <div className="3xl:my-40">
+      <h2 className="my-8 lg:my-20 text-3xl lg:text-6xl text-center font-bold">
         Skills
       </h2>
-      <div className="relative w-full h-[60vh] md:h-screen 3xl:h-[70vh] rounded-full flex items-center justify-center bg-circularLight dark:bg-circularDark">
+      <div className="relative w-full h-[40vh] md:h-screen 3xl:h-[70vh] rounded-full flex items-center justify-center bg-circularLight dark:bg-circularDark">
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="flex items-center justify-center p-1 md:p-4 lg:p-8 rounded-full shadow-dark dark:shadow-light bg-dark dark:bg-light text-light dark:text-dark font-semibold cursor-pointer text-base 3xl:text-3xl"
@@ -37,12 +37,12 @@ const Skills = () => {
         <Skill name="ReactJs" x="20vw" y="12vw" />
         <Skill name="Redux" x="-20vw" y="15vw" />
         <Skill name="Firebase" x="15vw" y="-15vw" />
-        <Skill name="Git" x="-5vw" y="-23vw" />
+        <Skill name="Git" x="-5vw" y="-21vw" />
         <Skill name="TailwindCSS" x="-30vw" y="-4vw" />
         <Skill name="Framer" x="30vw" y="4vw" />
         <Skill name="Github" x="5vw" y="22vw" />
       </div>
-    </>
+    </div>
   );
 };
 
