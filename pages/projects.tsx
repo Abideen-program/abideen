@@ -21,7 +21,7 @@ const FeaturedProject = ({
   github,
 }: ProjectProps) => {
   return (
-    <article className="relative w-full flex flex-col xl:flex-row items-center justify-between p-8 xl:p-12 gap-6 rounded-2xl xl:rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
+    <article className="relative w-full flex flex-col xl:flex-row items-center justify-between p-4 xl:p-12 gap-6 rounded-2xl xl:rounded-3xl border border-dark dark:border-light bg-light dark:bg-dark shadow-2xl cursor-pointer transform hover:rotate-x-30 hover:transition-all hover:duration-500">
       {/* <div className="absolute top-0 left-5 h-[103%] w-[102%] bg-dark rounded-3xl -z-10" /> */}
       <Link
         href={link}
