@@ -19,7 +19,7 @@ const about = () => {
         />
       </Head>
 
-      <main className="flex flex-col items-center justify-center dark:text-light">
+      <main className="mb-10 lg:mb-0 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-8">
           <AnimatedText
             text="what's worth doing is worth doing well!"
@@ -56,7 +56,7 @@ const about = () => {
             </div>
 
             <div className="col-span-8 md:col-span-4 lg:col-span-3 xl:col-span-4 3xl:col-span-3 h-max z-10 relative order-1 md:order-2">
-              <div className="w-[102%] h-[103%] top-0 -right-3 bg-dark dark:bg-light rounded-2xl absolute -z-10" />
+              <div className="w-[102%] md:h-[103%] top-0 md:-right-1 lg:-right-3 bg-dark dark:bg-light rounded-2xl absolute -z-10" />
               <div className="border-2 border-dark dark:border-light rounded-2xl p-6 bg-light dark:bg-dark">
                 <Image
                   src={DevDeen}

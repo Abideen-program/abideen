@@ -16,7 +16,7 @@ const Home = () => {
         <title>DevDeen</title>
         <meta name="description" content="seasonal frontend developer" />
       </Head>
-      <main className="flex items-center min-h-screen text-dark dark:text-light">
+      <main className="flex mb-10 md:mb-0 items-center min-h-screen text-dark dark:text-light">
         <Layout className="md:pt-0">
           <div className="flex items-center justify-between w-full flex-col lg:flex-row">
             <div className="md:w-[50%] w-full">
@@ -92,7 +92,7 @@ const Home = () => {
 
         <Hireme />
 
-        <div className="w-24 absolute right-8 bottom-8 hidden md:inline-block">
+        <div className="w-24 absolute right-8 md:bottom-[200px] lg:bottom-auto hidden md:inline-block">
           <Image src={LightBulb} alt="Light bulb" className="w-full" />
         </div>
       </main>

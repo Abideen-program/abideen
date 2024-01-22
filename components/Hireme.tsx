@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hireme = () => {
   return (
-    <div className="fixed lg:left-4 lg:bottom-4 lg:top-auto top-1 right-0 lg:right-auto flex items-center justify-center overflow-hidden">
+    <div className="fixed lg:left-4 lg:bottom-10 3xl:bottom-20 lg:top-auto top-1 right-0 lg:right-auto flex items-center justify-center overflow-hidden">
       <div className="w-20 lg:w-48 h-auto flex items-center justify-center relative ">
         {/* <Cirlce className={`animate-spin-slow fill-dark dark:fill-light`} /> */}
         <CirleIcon className={`animate-spin-slow fill-dark dark:fill-light`} />
