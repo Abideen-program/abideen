@@ -8,6 +8,7 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion } from "framer-motion";
 import { LinkArrow } from "@/components/Icons";
 import Hireme from "@/components/Hireme";
+import TransitionEffects from "@/components/TransitionEffects";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <title>DevDeen</title>
         <meta name="description" content="seasonal frontend developer" />
       </Head>
+      <TransitionEffects />
       <main className="flex mb-10 md:mb-0 items-center min-h-screen text-dark dark:text-light">
         <Layout className="md:pt-0">
           <div className="flex items-center justify-between w-full flex-col lg:flex-row">
@@ -41,7 +43,7 @@ const Home = () => {
                 animate={{
                   y: 0,
                   opacity: 1,
-                  transition: { delay: 3, duration: 0.5 },
+                  transition: { delay: 2, duration: 0.5 },
                 }}
                 className="my-3 font-medium text-sm md:text-base 3xl:text-3xl 3xl:leading-[50px] lg:text-left text-center"
               >
@@ -56,7 +58,7 @@ const Home = () => {
                 animate={{
                   y: 0,
                   opacity: 1,
-                  transition: { delay: 3, duration: 0.5 },
+                  transition: { delay: 2, duration: 0.5 },
                 }}
                 className="flex items-center justify-center gap-4 3xl:text-5xl lg:self-start mt-2"
               >

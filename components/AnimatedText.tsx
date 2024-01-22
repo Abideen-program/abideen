@@ -10,7 +10,7 @@ const quote = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      staggerChildren: 0.4,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -24,7 +24,7 @@ const singleWord = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.7,
+      duration: 0.5,
     },
   },
 };

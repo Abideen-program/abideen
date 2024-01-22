@@ -7,6 +7,7 @@ import AnimateValue from "@/components/AnimateValue";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffects from "@/components/TransitionEffects";
 
 const about = () => {
   return (
@@ -18,7 +19,7 @@ const about = () => {
           content="Experience and Education details about Abideen"
         />
       </Head>
-
+      <TransitionEffects />
       <main className="mb-10 lg:mb-0 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-8">
           <AnimatedText

@@ -11,6 +11,7 @@ import Shoppy from "../public/images/shoppy.png";
 import Bank from "../public/images/bank.png";
 import Disney from "../public/images/disney.png";
 import Cocktail from "../public/images/cocktail.png";
+import TransitionEffects from "@/components/TransitionEffects";
 
 const FeaturedProject = ({
   type,
@@ -133,6 +134,7 @@ const projects = () => {
         <title>DevDeen | Projects Page</title>
         <meta name="description" content="projects done by DevDeen" />
       </Head>
+      <TransitionEffects />
       <main className="w-full flex flex-col items-center justify-center dark:text-light mb-10 lg:mb-20 3xl:mb-40">
         <Layout className="pt-8">
           <AnimatedText
