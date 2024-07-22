@@ -6,6 +6,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Jumia from "../public/images/jumia.png";
+import BetAdmin from "../public/images/betadmin.png";
+import BetAgent from "../public/images/betagent.png";
 import Fresh from "../public/images/fresh.png";
 import Shoppy from "../public/images/shoppy.png";
 import Bank from "../public/images/bank.png";
@@ -143,6 +145,27 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-x-0 gap-y-5 md:gap-x-10 md:gap-y-10 w-full mt-10">
+            <div className="col-span-12 md:col-span-6 perspective-1200">
+              <Project
+                github=""
+                img={BetAgent}
+                link="https://app.bet9jafoundation.org/"
+                title="Bet9ja Foundation"
+                type="Grant System"
+                className="-rotate-y-30"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 perspective-1200">
+              <Project
+                github=""
+                img={BetAdmin}
+                link="https://admin.bet9jafoundation.org/"
+                title="Bet9ja Foundation"
+                type="Grant System"
+                className="rotate-y-30"
+              />
+            </div>
+
             <div className="col-span-12 w-full perspective-1600">
               <FeaturedProject
                 github="https://github.com/Abideen-program/jumia"
