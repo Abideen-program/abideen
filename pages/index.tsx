@@ -63,7 +63,7 @@ const Home = () => {
                 className="flex items-center justify-center gap-4 3xl:text-5xl lg:self-start mt-2"
               >
                 <Link
-                  href="/abideen.pdf"
+                  href="https://drive.google.com/file/d/1AsRx8rwO82jdgNN9FbtZ8BcdQZPKXH6N/view?usp=sharing"
                   download={true}
                   target="_blank"
                   className="flex text-sm md:text-base items-center justify-center p-2 px-4 md:p-2.5 md:px-6 bg-dark dark:bg-light text-light dark:text-dark rounded-lg font-semibold border-2 border-transparent hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light hover:border-dark dark:hover:border-light 3xl:p-8 3xl:text-5xl"
