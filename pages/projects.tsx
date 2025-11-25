@@ -14,6 +14,9 @@ import Bank from "../public/images/bank.png";
 import Disney from "../public/images/disney.png";
 import Cocktail from "../public/images/cocktail.png";
 import TransitionEffects from "@/components/TransitionEffects";
+import Hangukmun from "../public/images/hangukmun.png";
+import Global from "../public/images/global.png";
+import KWT from "../public/images/kwt.png";
 
 const FeaturedProject = ({
   type,
@@ -145,6 +148,38 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-x-0 gap-y-5 md:gap-x-10 md:gap-y-10 w-full mt-10">
+            <div className="col-span-12 md:col-span-6 perspective-1200">
+              <Project
+                github=""
+                img={Global}
+                link="https://globalmsq.com/"
+                title="Global MSQ"
+                type="Cryptocurrency"
+                className="-rotate-y-30"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 perspective-1200">
+              <Project
+                github=""
+                img={KWT}
+                link="https://kwt.credit/"
+                title="KWT"
+                type="Cryptocurrency"
+                className="rotate-y-30"
+              />
+            </div>
+
+            <div className="col-span-12 w-full perspective-1600">
+              <FeaturedProject
+                github=""
+                img={Hangukmun}
+                link="https://hangukmun.com/"
+                summary="A study abroad and employment platform designed to help users achieve the real Korean Dream by connecting them to verified opportunities and resources. Built with Next.js, TypeScript, and GSAP for smooth animations and engaging transitions."
+                title="Hangukmun"
+                type="Featured Project"
+              />
+            </div>
+
             <div className="col-span-12 md:col-span-6 perspective-1200">
               <Project
                 github=""
