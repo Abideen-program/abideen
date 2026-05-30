@@ -99,9 +99,9 @@ const Experience = () => {
             companyLink="/"
             address="Lagos, Nigeria"
             time="01/2023 - 06/2023"
-            work="Worked on a team responsible for developing a system that enables customers to embrace predictive analytics and ensure effective maintenance of their building around the clock and from anywhere."
-            workTwo="Helped about 2000 customers to achieve a drastic reduction of about 50% in their operational costs and stricter security on their building maintenance."
-            className="mt-2"
+            work="▸Translated Figma designs into pixel-perfect, responsive interfaces (React.js, Tailwind CSS), accelerating delivery cycles by 30%.
+            ▸Integrated RESTful APIs supporting 100+ daily transactions; improved data-fetch efficiency by 25% through caching and request debouncing.
+            ▸Achieved 99%+ cross-browser compatibility; applied performance optimisations that increased app speed by 35%."
           />
 
           <Details
