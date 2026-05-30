@@ -36,7 +36,7 @@ const about = () => {
               <p className="font-medium text-sm md:text-sm 3xl:text-3xl 3xl:leading-[50px] text-black/90 dark:text-light/90">
                 Hi, I'm DevDeen, a frontend developer with a passion for
                 creating beautiful, functional, and user-centered digital
-                experiences. With 3 years of experience in the field. I am
+                experiences. With 4 years of experience in the field. I am
                 always looking for new and innovative ways to bring my clients'
                 visions to life. I want to change the world positively with a
                 single line of code

@@ -72,12 +72,25 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-center justify-between">
           <Details
-            position="Frontend Dev."
-            company="Complanet"
+            position="Frontend Dev"
+            company="Bhluemountain"
             companyLink="/"
-            address="Abeokuta, Nigeria"
-            time="06/2023 - Present"
-            work="Worked on a team responsible for developing grant application and approving system for a popular betting company, including onboarding of users down to approval by the admin team of the betting company."
+            address="Lagos, Nigeria"
+            time="03/2024 - 08/2024"
+            work="▸Led UI build for a microfinance raffle system (Next.js, TypeScript, Tailwind, Shadcn UI), directly contributing to 15% customer growth and processing 5,000+ raffle entries.
+            ▸Architected a shared component library reused across 10+ pages, cutting new-feature development time by 25%.
+            ▸Integrated Framer Motion animation system, reducing animation frame-drop incidents by 50% and boosting satisfaction scores by 20%."
+          />
+
+          <Details
+            position="Frontend Dev."
+            company="Complanet Technologies"
+            companyLink="/"
+            address="Lagos, Nigeria"
+            time="06/2023 - 02/2024"
+            work="▸Built the IQ Grant platform for Bet9ja Foundation — a full-featured grant-management tool that processed 1,000+ applications with admin dashboards and agent portals.
+            ▸Implemented lazy-loading, code-splitting, and accessibility best practices, reducing initial load by 40% and achieving full WCAG compliance.
+            ▸Delivered a fully responsive corporate site in React + Tailwind CSS, increasing mobile engagement by 30%."
           />
 
           <Details
