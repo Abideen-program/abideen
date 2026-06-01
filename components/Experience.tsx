@@ -72,6 +72,15 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-center justify-between">
           <Details
+            position="Frontend Dev (Web Publisher)"
+            company="Must Company"
+            companyLink="https://www.must.company/"
+            address="Lagos, Nigeria"
+            time="02/2025 - 05/2026"
+            work="▸Engineered and deployed SEO-optimised pages in React and Next.js on headless CMS stacks, driving a 30% uplift in organic search traffic.▸Achieved 98% WCAG 2.1 AA compliance and cut page load times by 35% through lazy loading, image optimisation, and critical CSS strategies.▸Shipped 50+ content features and A/B variants in agile sprints, improving user retention by 20% quarter-over-quarter. ▸Partnered cross-functionally with product, design, and backend teams to maintain design-system consistency across multiple locales. ▸Maintained design-system consistency across multiple locales."
+          />
+
+          <Details
             position="Frontend Dev"
             company="Bhluemountain"
             companyLink="/"
@@ -96,7 +105,7 @@ const Experience = () => {
           <Details
             position="Intern"
             company="Iobotech"
-            companyLink="/"
+            companyLink="https://www.iobotech.com/"
             address="Lagos, Nigeria"
             time="01/2023 - 06/2023"
             work="▸Translated Figma designs into pixel-perfect, responsive interfaces (React.js, Tailwind CSS), accelerating delivery cycles by 30%.
